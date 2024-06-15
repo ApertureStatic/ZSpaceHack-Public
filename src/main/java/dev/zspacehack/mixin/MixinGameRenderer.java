@@ -1,5 +1,7 @@
 package dev.zspacehack.mixin;
 
+import dev.zspacehack.ZSpace;
+import dev.zspacehack.events.impl.Render3DEvent;
 import dev.zspacehack.module.modules.render.NoRender;
 import net.minecraft.client.render.GameRenderer;
 import net.minecraft.client.util.math.MatrixStack;
@@ -23,5 +25,11 @@ public class MixinGameRenderer {
         if (NoRender.INSTANCE.isOn() && NoRender.INSTANCE.hurtCam.getValue()) {
             ci.cancel();
         }
+    }
+
+    @Inject(method = "renderWorld", at = @At("HEAD"))
+    private void render3dHook(float tickDelta, long limitTime, MatrixStack matrices, CallbackInfo ci) {
+        Render3DEvent event = new Render3DEvent(matrices);
+        ZSpace.EVENT_BUS.post(event);
     }
 }

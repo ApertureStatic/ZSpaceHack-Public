@@ -4,11 +4,9 @@
   "package": "dev.zspacehack.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
-
   ],
   "client": [
     "AbstractBlockStateMixin",
-    "DamageManagerMixin",
     "AbstractSignEditScreenMixin",
     "BlockMixin",
     "BlockModelRendererMixin",
@@ -19,6 +17,7 @@
     "ClientPlayerEntityMixin",
     "ClientPlayerInteractionManagerMixin",
     "ClientWindowMixin",
+    "DamageManagerMixin",
     "FluidBlockMixin",
     "IClientWorld",
     "IEntityVelocityUpdateS2CPacket",
@@ -32,6 +31,7 @@
     "MixinEntity",
     "MixinFlowableFluid",
     "MixinGameRenderer",
+    "MixinInGameHUD",
     "MixinInGameOverlayRenderer",
     "MixinKeyboard",
     "MixinLivingEntityRenderer",

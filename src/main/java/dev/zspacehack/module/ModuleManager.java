@@ -129,9 +129,6 @@ public class ModuleManager implements Wrapper {
 		GL11.glEnable(GL11.GL_LINE_SMOOTH);
 		GL11.glEnable(GL11.GL_CULL_FACE);
 		GL11.glDisable(GL11.GL_DEPTH_TEST);
-		
-		
-		
 		matrixStack.push();
 		RenderUtils.applyRenderOffset(matrixStack);
 		for(Module module : modules) {
