@@ -1,0 +1,49 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "dev.zspacehack.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+
+  ],
+  "client": [
+    "AbstractBlockStateMixin",
+    "DamageManagerMixin",
+    "AbstractSignEditScreenMixin",
+    "BlockMixin",
+    "BlockModelRendererMixin",
+    "CactusBlockMixin",
+    "ChatInputSuggestorMixin",
+    "ChatScreenMixin",
+    "ClientConnectionMixin",
+    "ClientPlayerEntityMixin",
+    "ClientPlayerInteractionManagerMixin",
+    "ClientWindowMixin",
+    "FluidBlockMixin",
+    "IClientWorld",
+    "IEntityVelocityUpdateS2CPacket",
+    "IExplosionS2CPacket",
+    "IngameHudMixin",
+    "IPlayerMoveC2SPacket",
+    "LightmapTextureManagerMixin",
+    "MinecraftClientMixin",
+    "MixinArmorFeatureRenderer",
+    "MixinBackgroundRenderer",
+    "MixinEntity",
+    "MixinFlowableFluid",
+    "MixinGameRenderer",
+    "MixinInGameOverlayRenderer",
+    "MixinKeyboard",
+    "MixinLivingEntityRenderer",
+    "MixinParticleManager",
+    "MixinWorld",
+    "MouseMixin",
+    "MultiplayerScreenMixin",
+    "RenderTickCounterMixin",
+    "SimpleOptionMixin",
+    "WorldRendererMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

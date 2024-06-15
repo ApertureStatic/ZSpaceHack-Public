@@ -1,2 +1,2 @@
-# ZSpaceHack-Public
-Best BBTT Hack Client
+# ZSpaceHack-base
+Minecraft hack client for cpvp on 1.20.1
